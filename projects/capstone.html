@@ -85,6 +85,56 @@
     </div>
 </section>
 
+    <!-- SOFTWARE ENGINEERING ENHANCEMENT -->
+<section class="section">
+    <h2>Software Engineering Enhancement</h2>
+
+    <div class="card">
+        <p>
+            For the Software Engineering outcome, I refactored the original investment calculation 
+            artifact to improve maintainability, readability, security, and alignment with modern 
+            software development best practices. The original version of the code contained several 
+            issues, including duplicated logic, magic numbers, inconsistent naming conventions, lack 
+            of modularity, and minimal error handling. These issues made the calculation process 
+            difficult to maintain and posed potential security risks.
+        </p>
+
+        <p>
+            The refactored version applies clean coding principles, modular design, and secure 
+            engineering practices. Redundant logic was moved into helper methods, all constants 
+            were extracted into symbolic values, and structured validation was added to ensure that 
+            all incoming parameters remain within acceptable ranges. Input handling and error 
+            messages were also improved to prevent unintended crashes and to better guide the 
+            user when incorrect data is provided.
+        </p>
+
+        <p>
+            Additionally, the controller now follows a more RESTful structure, clearly separating 
+            business logic from routing concerns. This improves the separation of concerns, testability, 
+            and future scalability of the application. The improved version also aligns with secure coding 
+            principles outlined by OWASP, including validation, error handling, and reduced attack surface.
+        </p>
+
+        <p><strong>Refactored Artifact Location:</strong></p>
+
+        <a 
+            href="https://github.com/DCaputi001/financial-planner/blob/main/backend/controllers/investmentController.js" 
+            class="btn-small" 
+            target="_blank">
+            View Refactored investmentController.js
+        </a>
+
+        <p style="margin-top: 20px;">
+            This refactoring demonstrates mastery of the Software Engineering outcome by applying 
+            maintainable code structure, improving readability, reducing complexity, increasing security, 
+            and ensuring long-term sustainability of the application. The changes directly improve the 
+            performance and reliability of the financial calculations while ensuring that the application 
+            follows a modern and scalable design.
+        </p>
+    </div>
+
+</section>
+
 <!-- PLACEHOLDER FOR FUTURE SECTIONS -->
 <section class="section">
     <h2>Enhancements (Coming Soon)</h2>
@@ -102,4 +152,5 @@
 </body>
 
 </html>
+
 
