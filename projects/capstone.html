@@ -135,6 +135,64 @@
 
 </section>
 
+<!-- ALGORITHMS & DATA STRUCTURES ENHANCEMENT -->
+<section class="section">
+    <h2>Algorithms & Data Structures Enhancement</h2>
+
+    <div class="card">
+        <p>
+            For the Algorithms and Data Structures outcome, I enhanced the goal management logic 
+            within the application by optimizing how user goals are processed, updated, and retrieved. 
+            The original implementation contained unnecessary iterations, repeated database queries, 
+            and minimal validation logic. These issues increased computational overhead and introduced 
+            opportunities for incorrect or inconsistent goal calculations.
+        </p>
+
+        <p>
+            The enhanced version focuses on algorithmic efficiency, improved data handling, 
+            and systematic validation. I consolidated redundant logic into single operations, 
+            reduced the number of database calls by structuring queries more effectively, 
+            and implemented clear conditional flows to ensure predictable and efficient behavior.
+            These changes allow the controller to compute and maintain user financial goals 
+            with better performance and stability.
+        </p>
+
+        <p>
+            Data structures were also improved by ensuring that objects returned from the 
+            controller follow a consistent and predictable shape. Rather than dynamically 
+            constructing uneven objects, the refactored version enforces a stable data model, 
+            making downstream processing more reliable and reducing the need for defensive 
+            programming throughout the application.
+        </p>
+
+        <p>
+            Error conditions are now handled using explicit validation paths, preventing invalid 
+            goal parameters from propagating deeper into the system. This reduces the potential 
+            for logic errors, corrupt state, or broken financial projections. Additionally, 
+            separating validation, computation, and database interaction improves the 
+            maintainability and testability of the algorithmic logic.
+        </p>
+
+        <p><strong>Enhanced Artifact Location:</strong></p>
+
+        <a 
+            href="https://github.com/DCaputi001/financial-planner/blob/main/backend/controllers/goalController.js" 
+            class="btn-small" 
+            target="_blank">
+            View Enhanced goalController.js
+        </a>
+
+        <p style="margin-top: 20px;">
+            This enhancement demonstrates mastery of the Algorithms and Data Structures outcome by 
+            improving computational efficiency, eliminating unnecessary processing, organizing data 
+            flow more effectively, and creating predictable, testable data structures. These algorithmic 
+            improvements ensure faster execution, reduced system load, and more reliable financial 
+            goal calculations for users.
+        </p>
+    </div>
+
+</section>
+
 <!-- PLACEHOLDER FOR FUTURE SECTIONS -->
 <section class="section">
     <h2>Enhancements (Coming Soon)</h2>
@@ -152,5 +210,6 @@
 </body>
 
 </html>
+
 
 
