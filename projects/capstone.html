@@ -192,6 +192,62 @@
     </div>
 
 </section>
+    
+<!-- DATABASE ENHANCEMENT -->
+<section class="section">
+    <h2>Database Enhancement</h2>
+
+    <div class="card">
+        <p>
+            For the Database outcome, I improved the reliability, efficiency, and security of 
+            the data operations within the application by refactoring the goal database controller. 
+            The original implementation contained tightly coupled logic, lacked consistent error 
+            handling, and relied on repetitive database queries that introduced unnecessary load and 
+            increased the likelihood of data inconsistencies.
+        </p>
+
+        <p>
+            The enhanced version introduces a structured approach to data access by organizing 
+            database interactions into modular, predictable operations. CRUD functions were redesigned 
+            to ensure that all database queries use proper validation, return consistent data structures, 
+            and handle failure states explicitly. This prevents ambiguous results and improves the 
+            stability of the application's data layer.
+        </p>
+
+        <p>
+            Query efficiency was improved by reducing redundant lookups and ensuring that each database 
+            operation only retrieves or updates the data required for the current action. Error conditions 
+            now follow clear execution paths, making it easier to detect, log, and respond to potential 
+            database failures. These changes directly improve overall application resilience.
+        </p>
+
+        <p>
+            Security was also strengthened through the use of controlled data inputs, predictable return 
+            types, and defensive handling of user-provided values. By ensuring that all data passed into 
+            the database layer is validated and sanitized, the enhanced controller aligns with secure 
+            development principles recommended by OWASP and reduces the potential for injection-based 
+            attacks or malformed data propagation.
+        </p>
+
+        <p><strong>Enhanced Database Controller Location:</strong></p>
+
+        <a 
+            href="https://github.com/DCaputi001/financial-planner/blob/main/backend/controllers/goalDatabaseController.js" 
+            class="btn-small" 
+            target="_blank">
+            View Enhanced goalDatabaseController.js
+        </a>
+
+        <p style="margin-top: 20px;">
+            This enhancement demonstrates mastery of the Database outcome by strengthening database 
+            interaction patterns, improving query structure, enforcing consistent data models, and 
+            applying secure and efficient database management practices. The refactored design ensures 
+            improved performance, increased reliability, and safer long-term scalability within the 
+            financial planning application.
+        </p>
+    </div>
+
+</section>
 
 <!-- PLACEHOLDER FOR FUTURE SECTIONS -->
 <section class="section">
@@ -210,6 +266,7 @@
 </body>
 
 </html>
+
 
 
 
