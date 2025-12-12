@@ -173,29 +173,20 @@
     <h2>Software Engineering Enhancement</h2>
 
     <div class="card">
-        <p>
-            For the Software Engineering outcome, I refactored the original investment calculation 
-            artifact to improve maintainability, readability, security, and alignment with modern 
-            software development best practices. The original version of the code contained several 
-            issues, including duplicated logic, magic numbers, inconsistent naming conventions, lack 
-            of modularity, and minimal error handling. These issues made the calculation process 
-            difficult to maintain and posed potential security risks.
+        <p style="text-indent: 2em;">
+            The artifact selected for the Software Engineering outcome is an investment growth calculator originally developed as a C++ console application in my CS 210 Programming Languages course. The original implementation focused solely on performing compound interest calculations using basic procedural logic and user input prompts. For this capstone project, I transformed that early academic artifact into a modern full-stack web application using a Node.js and Express backend with an Angular frontend. This enhancement was completed during the capstone development period in 2025 and reflects my growth from writing standalone programs to designing scalable, professional software systems.
         </p>
 
-        <p>
-            The refactored version applies clean coding principles, modular design, and secure 
-            engineering practices. Redundant logic was moved into helper methods, all constants 
-            were extracted into symbolic values, and structured validation was added to ensure that 
-            all incoming parameters remain within acceptable ranges. Input handling and error 
-            messages were also improved to prevent unintended crashes and to better guide the 
-            user when incorrect data is provided.
+        <p style="text-indent: 2em;">
+            I selected this artifact because it clearly demonstrates my progression in software engineering and architectural design. The original version lacked validation, modular structure, and real-world usability. In contrast, the enhanced version follows a MEAN-style architecture that separates concerns across controllers, routes, services, and configuration layers. The backend exposes a RESTful API for investment calculations with structured error handling and secure input validation, while the frontend provides a typed Angular interface using standalone components, routing, and two-way data binding. These design decisions improve maintainability, testability, and scalability.
+        </p>
+    
+        <p style="text-indent: 2em;">
+            Security and robustness were key considerations throughout the enhancement. I implemented layered validation on both the frontend and backend to ensure invalid or malicious input is safely handled before processing. Constants replaced magic numbers, redundant logic was modularized into reusable functions, and error messaging was improved to guide users without exposing internal logic. These changes align with secure coding and clean code principles and demonstrate a strong security mindset appropriate for production-ready software.
         </p>
 
-        <p>
-            Additionally, the controller now follows a more RESTful structure, clearly separating 
-            business logic from routing concerns. This improves the separation of concerns, testability, 
-            and future scalability of the application. The improved version also aligns with secure coding 
-            principles outlined by OWASP, including validation, error handling, and reduced attack surface.
+        <p style="text-indent: 2em;">
+            Enhancing this artifact reinforced the importance of modular design, validation, and clear separation between frontend and backend responsibilities. One of the primary challenges was coordinating data flow and routing between Angular and Express after transitioning from a console-only workflow. Overcoming these challenges strengthened my ability to design and communicate technical solutions effectively and confirmed that this artifact fully satisfies the Software Engineering and Design outcome outlined in my capstone plan.
         </p>
 
         <p><strong>Refactored Artifact Location:</strong></p>
@@ -349,6 +340,7 @@
 </body>
 
 </html>
+
 
 
 
