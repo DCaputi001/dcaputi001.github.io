@@ -211,41 +211,58 @@
 
 <!-- ALGORITHMS & DATA STRUCTURES ENHANCEMENT -->
 <section class="section">
-    <h2>Algorithms & Data Structures Enhancement</h2>
+    <h2>Algorithms &amp; Data Structures Enhancement</h2>
 
     <div class="card">
-        <p>
-            For the Algorithms and Data Structures outcome, I enhanced the goal management logic 
-            within the application by optimizing how user goals are processed, updated, and retrieved. 
-            The original implementation contained unnecessary iterations, repeated database queries, 
-            and minimal validation logic. These issues increased computational overhead and introduced 
-            opportunities for incorrect or inconsistent goal calculations.
+        <p style="text-indent: 2em;">
+            For the Algorithms and Data Structures portion of my capstone, I selected the authentication
+            and savings-goal optimization components of my full-stack financial planning application.
+            I chose this artifact because it demonstrates substantial growth from my original C++
+            investment calculator, which relied primarily on basic loops and arithmetic. In the enhanced
+            version, I incorporated advanced algorithmic strategies, secure data-handling mechanisms,
+            and structured data management to address real-world problems.
         </p>
 
-        <p>
-            The enhanced version focuses on algorithmic efficiency, improved data handling, 
-            and systematic validation. I consolidated redundant logic into single operations, 
-            reduced the number of database calls by structuring queries more effectively, 
-            and implemented clear conditional flows to ensure predictable and efficient behavior.
-            These changes allow the controller to compute and maintain user financial goals 
-            with better performance and stability.
+        <p style="text-indent: 2em;">
+            The multi-factor authentication (MFA) module showcases strong algorithmic reasoning through
+            the use of cryptographic hashing, BASE32 secret encoding, HMAC-SHA1–based TOTP generation,
+            and constant-time comparisons. These enhancements highlight my ability to apply algorithms
+            beyond numerical computation, particularly in the domain of security, which is one of the
+            most critical algorithmic areas in modern software engineering. In parallel, the
+            savings-goal optimizer implements a logarithmic-time binary search algorithm to compute the
+            minimum monthly deposit required to reach a financial target, demonstrating efficient
+            problem-solving and performance-oriented algorithmic trade-offs.
         </p>
 
-        <p>
-            Data structures were also improved by ensuring that objects returned from the 
-            controller follow a consistent and predictable shape. Rather than dynamically 
-            constructing uneven objects, the refactored version enforces a stable data model, 
-            making downstream processing more reliable and reducing the need for defensive 
-            programming throughout the application.
+        <p style="text-indent: 2em;">
+            This enhancement allowed me to fully meet the course outcomes identified in Module One.
+            I designed and evaluated computing solutions using established algorithmic principles,
+            including cryptographic HMAC algorithms, hash comparison techniques, iterative counters,
+            and binary search–based optimization. I demonstrated mastery of appropriate computer science
+            techniques by implementing secure credential storage using bcrypt hashing, BASE32 encoding
+            for safe TOTP secret transmission and storage, and structured data organization through
+            objects, schemas, and persistent models. I also established a strong security mindset by
+            implementing a complete MFA workflow that anticipates adversarial exploits, mitigates
+            timing drift and encoding mismatches, and ensures privacy through proper secret management.
         </p>
 
-        <p>
-            Error conditions are now handled using explicit validation paths, preventing invalid 
-            goal parameters from propagating deeper into the system. This reduces the potential 
-            for logic errors, corrupt state, or broken financial projections. Additionally, 
-            separating validation, computation, and database interaction improves the 
-            maintainability and testability of the algorithmic logic.
+        <p style="text-indent: 2em;">
+            Enhancing this artifact reinforced how closely algorithmic design, security, and data
+            structures are intertwined in real-world applications. Implementing TOTP correctly required
+            a deep understanding of time-based counters, buffer manipulation, HMAC hashing, and the
+            importance of standardized BASE32 encoding. Debugging mismatched verification codes provided
+            practical insight into how small deviations in encoding, byte alignment, or time slicing
+            can undermine cryptographic algorithms. Similarly, developing the savings-goal optimizer
+            emphasized the impact of algorithm selection, as binary search significantly reduced
+            computation time compared to naive linear approaches. One of the primary challenges was
+            ensuring deterministic TOTP behavior across database reads and execution cycles, which
+            required rethinking secret generation, standardizing encoding, and validating HMAC output
+            consistency. Overall, this process strengthened my understanding of efficient computation,
+            security-focused algorithms, and the role of structured data in building robust and
+            reliable software systems.
         </p>
+    </div>
+</section>
 
         <p><strong>Enhanced Artifact Location:</strong></p>
 
@@ -272,36 +289,59 @@
     <h2>Database Enhancement</h2>
 
     <div class="card">
-        <p>
-            For the Database outcome, I improved the reliability, efficiency, and security of 
-            the data operations within the application by refactoring the goal database controller. 
-            The original implementation contained tightly coupled logic, lacked consistent error 
-            handling, and relied on repetitive database queries that introduced unnecessary load and 
-            increased the likelihood of data inconsistencies.
+        <p style="text-indent: 2em;">
+            The artifact selected for the Database Enhancement category is the original
+            <em>animal_shelter.py</em> module, created during CS 340 Client-Server Development as part
+            of a CRUD-based introduction to MongoDB. The original artifact implemented a simple
+            Python class that connected to a remote MongoDB instance and provided basic create,
+            read, update, and delete operations for an animal shelter dataset. Although it
+            demonstrated foundational NoSQL database concepts, it was limited to standalone
+            procedural operations and lacked integration within a full application ecosystem.
+            I selected this artifact because it provided a strong baseline for demonstrating
+            growth in database design, API integration, schema modeling, secure data handling,
+            and full-stack persistence.
         </p>
 
-        <p>
-            The enhanced version introduces a structured approach to data access by organizing 
-            database interactions into modular, predictable operations. CRUD functions were redesigned 
-            to ensure that all database queries use proper validation, return consistent data structures, 
-            and handle failure states explicitly. This prevents ambiguous results and improves the 
-            stability of the application's data layer.
+        <p style="text-indent: 2em;">
+            In the enhanced version, I significantly expanded the database functionality by
+            designing and implementing a robust MongoDB persistence layer for the Financial
+            Planner web application. Rather than performing isolated CRUD operations, the new
+            system introduces a complete savings-goal storage subsystem that allows authenticated
+            users to save, retrieve, and delete personalized financial goals. This enhancement
+            includes a structured Mongoose schema, dedicated controllers for database operations,
+            protected Express routes, a verification middleware layer, and an Angular service
+            responsible for communicating with these endpoints. Database records are securely
+            associated with individual user identifiers, validated on entry, and restricted so
+            that only authenticated users may access or modify their data.
         </p>
 
-        <p>
-            Query efficiency was improved by reducing redundant lookups and ensuring that each database 
-            operation only retrieves or updates the data required for the current action. Error conditions 
-            now follow clear execution paths, making it easier to detect, log, and respond to potential 
-            database failures. These changes directly improve overall application resilience.
+        <p style="text-indent: 2em;">
+            This enhancement fully satisfies the database-related course outcomes identified in
+            Module One. By transitioning from a Python-based CRUD demonstration to a complete
+            Node.js, Express, and MongoDB persistence architecture, I demonstrated my ability to
+            design well-structured, secure, and scalable database solutions that support real
+            application workflows. I also applied industry-standard tools and techniques,
+            including schema-driven validation, RESTful API design, and controlled access to
+            database resources. No updates to my outcome-coverage plan were required, as the
+            completed enhancement fulfills the database outcome while reinforcing software
+            engineering and security objectives.
         </p>
 
-        <p>
-            Security was also strengthened through the use of controlled data inputs, predictable return 
-            types, and defensive handling of user-provided values. By ensuring that all data passed into 
-            the database layer is validated and sanitized, the enhanced controller aligns with secure 
-            development principles recommended by OWASP and reduces the potential for injection-based 
-            attacks or malformed data propagation.
+        <p style="text-indent: 2em;">
+            Throughout the enhancement process, I gained practical experience aligning backend
+            database design with authentication flows, client-side logic, and overall application
+            architecture. One of the primary challenges involved enforcing authorization to
+            ensure that only permitted users could read or modify stored data. Addressing this
+            required implementing token-parsing middleware, restructuring the goal model to
+            correctly associate user identifiers, and resolving ObjectId validation issues during
+            login integration. Additional challenges arose from coordinating Angular services
+            with protected backend routes and ensuring authorization headers were generated and
+            validated consistently. These experiences strengthened my understanding of full-stack
+            data handling, secure query design, and responsibility separation across the API and
+            persistence layers.
         </p>
+    </div>
+</section>
 
         <p><strong>Enhanced Database Controller Location:</strong></p>
 
@@ -340,6 +380,7 @@
 </body>
 
 </html>
+
 
 
 
